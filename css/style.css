@@ -1,0 +1,205 @@
+@charset "utf-8";
+.hidden{
+  font-size: 0;
+  color: transparent;
+}
+
+section{
+  padding: 50px 0 100px;
+}
+
+main img{
+  width: 100%;
+  height: auto;
+}
+
+#conwrap{
+  padding: 100px 0;
+}
+
+#conwrap > .inner{
+  background-color: #eeebdd;
+  margin: 100px auto;
+}
+
+ h2::before{
+  content: '';
+  display: block;
+  width: 70px;
+  height: 5px;
+  background-color: #16775f;
+  margin: 0 auto 20px;
+}
+
+ h2{
+  transform: translateX(-300px);
+  opacity: 0;
+}
+
+ h2::before{
+  transform: translateX(-300px);
+  opacity: 0;
+}
+
+section ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+section li{
+  margin: 75px 0;
+  flex-shrink: 30%;
+  transform: translateY(-150px);
+  opacity: 0;
+  width: 32%;  
+}
+
+section li:first-child{
+  transform: translateY(-150px);
+}
+
+section li:nth-child(2){
+  transform: translateY(-250px);
+}
+
+section li:nth-child(3){
+  transform: translateY(-350px);
+}
+
+section li .circle{
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: relative;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+section li img{
+  transform: scale(0.5);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s;
+}
+
+.intro li.bottom,
+.gift li.bottom{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.intro li:first-child.bottom,
+.gift li:first-child.bottom{
+  transition: all 1.3s;
+}
+
+.intro li:nth-child(2).bottom
+,.gift li:nth-child(2).bottom{
+  transition: all 1.6s;
+}
+
+.intro li:nth-child(3).bottom,
+.gift li:nth-child(3).bottom{
+  transition: all 1.9s;
+}
+
+/* .intro h2.left, .intro h2.left::before{
+  transform: translateX(0);
+  opacity: 1;
+} */
+
+.intro h2.left, .gift h2.left{
+  transition: all 1s;
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.intro h2.left::before, .gift h2.left::before{
+  transition: all 0.5s;
+  transform: translateX(0);
+  opacity: 1;
+}
+
+section .txt{
+  width: 100%;
+  padding-top: 20px;  
+}
+
+section .txt h3{
+  display: block;
+  padding: 2px;
+  width: 75%;
+  text-align: center;
+  margin: 0 auto;
+  background-color: #16775f;
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+section .txt p{
+  padding: 15px 0;
+  font-size: 1.2rem;
+  text-align: center;  
+}
+
+.gift > p{
+  padding-top: 30px;
+  text-align: center;
+  font-size: 2rem;
+  transform: translateY(100px);
+  opacity: 0;
+}
+
+.gift > p.up{
+  transform: translateY(0);
+  opacity: 1;
+  transition: all 1s;
+}
+
+.gift >p span{
+  font-weight: 500;
+  font-size: 2.8rem;
+  position: relative;
+  z-index: 1;
+}
+
+.gift >p span:before{
+  position: absolute;
+  top: 10px;
+  left: 0;
+  z-index: -1;
+  content: '';
+  display: block;
+  width: 0px;
+  height: 32px;
+  background-color: #d1eae4;
+}
+
+.gift >p:hover span::before{
+ width: 200px;
+ transition: all 1s;
+}
+
+/* 미션! 줄긋기 이벤트 만들기 */
+.ulWRap{
+  text-align: center;
+  padding: 80px 0;
+}
+.gift .ulWRap > h3{
+  display: inline-block;
+  font-size: 2rem; 
+  padding: 10px 20px;
+  background-color: #16775f;
+  margin: 20px auto;
+  border-radius: 30px;
+  color: #eeebdd;
+}
+
+.gift li{
+  margin: 40px 0;
+}

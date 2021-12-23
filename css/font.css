@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+/* 배민도현 */
+@font-face {
+  font-family:'배달의민족 도현';
+  src: url(../font/BMDOHYEON_ttf.ttf);
+}
+
+h2{
+  font-family:'배달의민족 도현';
+  font-size: 3.6rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+@font-face {
+  font-family: '배달의민족 주아';
+  src: url(../font/BMJUA_ttf.ttf);
+}
+
+h3{
+  font-family: '배달의민족 주아';
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'KoPubWorld돋움체';
+  src: url(../font/KoPubWorld\ Dotum\ Light.ttf);
+}
+
+body{
+  font-family: 'KoPubWorld돋움체';
+  color: #313232;
+  font-size: 10px;
+}
+
+@font-face {
+  font-family: '더페이스샵 잉크립퀴드체';
+  src: url(../font/THEFACESHOP\ INKLIPQUID.ttf);
+}
+
+.pointFont{
+  font-family: '더페이스샵 잉크립퀴드체';
+}
